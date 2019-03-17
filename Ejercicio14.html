@@ -8,12 +8,32 @@
 <h2>Formulario</h2>
 </center>
 <form action="soy@erikbianco.me" method="post">
-<p>Nombre:<input type="text" name="nombre" maxlength="20" size="20"></p>
-<p>Area de texto:<input type="textarea" name="textarea" size="100"></p>
+	<!-- este tiene un label. todos los demas no. -->
+<p><label for="nombre">Nombre:</label><input type="text" name="nombre" maxlength="20" size="20"></p>
+<p>Area de texto:<br><textarea>Hola!</textarea></p>
 <p>Contraseña:<input type="password" name="contrasena" size="40"></p>
-<p>Selecciona una opcion:<select name="select"><option value="a">Una opcion</option><option value="b">Otra opcion</option><option value="c">La opcion que nadie elije</option></select></p>
+<fieldset>
+	<legend>Cosas que podes elegir</legend>
+<br>Selecciona una opcion:<select name="select"><option value="a">Una opcion</option><option value="b">Otra opcion</option><option value="c">La opcion que nadie elije</option></select></p>
+<p>Genero:
+<p><input type="radio" name="gender" value="male"> Hombre<br>
+<input type="radio" name="gender" value="female"> Mujer<br>
+<input type="radio" name="gender" value="other"> Otro
+<p>Elije un alimento:
+<select>
+  <optgroup label="Frutas">
+    <option value="Banana">Banana</option>
+    <option value="Manzana">Manzana</option>
+    <option value="Tomate">Tomate</option>
+  </optgroup>
+  <optgroup label="Verduras">
+    <option value="Zanahoria">Zanahoria</option>
+    <option value="Lechuga">Lechuga</option>
+  </optgroup>
+</select>
+</p>
+</fieldset>
 
-<p>Detalles de la consulta:<input type="text" name="detalle"></p>
 <p><button type="aaaa">AYUDA SOY UN BOTON</BUTTON></p>
 </form>
 </body>
